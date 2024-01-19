@@ -6,8 +6,88 @@
     <title>HTML Exercises</title>
 </head>
 <body>
+    <!--Navigation Menu-->
     <nav style="background:#E5D2C4; padding: 10px; text-align: center;">
-        <b><a href="http://" style="text-decoration: none; color: #000; font-size: 30px; margin: 80px;">Home</a></b>  <b><a href="http://" style="text-decoration: none; color: #000; font-size: 30px; margin: 80px;">About Us</a></b>  <b><a href="http://" style="text-decoration: none; color: #000; font-size: 30px; margin: 80px;">Contact</a></b>
+        <b><a href="http://" style="text-decoration: none; color: #000; font-size: 20px; margin: 80px;">Home</a></b>
+        <b><a href="http://" style="text-decoration: none; color: #000; font-size: 20px; margin: 80px;">About Us</a></b>
+        <b><a href="http://" style="text-decoration: none; color: #000; font-size: 20px; margin: 80px;">Contact</a></b>
     </nav>
+
+    <!--Image-->
+    <section style="float: left; margin: 20px; width: 43%; padding-left: 100px;">
+        <figure>
+            <img src="https://www.liveagent.com/wp/urlslab-download/e564ba2ff281638465b42321576dcd26/img-login.svg" alt="Image">
+        </figure>
+    </section>
+
+    <!--Forms-->
+    <section style="float: right; margin: 300px 10px 150px 70px; width: 44%;">
+        <form style="overflow: hidden;">
+            <label for="username">
+                Username:
+                &nbsp;&nbsp;&nbsp;
+            </label>
+            <input type="text" name="username" id="username" style="width: 50%; margin-bottom: 10px;">
+            <br>
+            
+            <label for="password">
+                Password:
+                &emsp;
+            </label>
+            <input type="password" name="password" id="password" style="width: 50%; margin-bottom: 10px;">
+            <br>
+            
+            <label>Gender:</label>
+            <label style="margin-right: 10px;">
+                <input type="radio" name="gender" value="Male">
+                Male
+            </label>
+            <label style="margin-right: 10px;">
+                <input type="radio" name="gender" value="Female">
+                Female
+            </label>
+
+            <label style="display: block; margin-top: 10px;">
+                <input type="checkbox" name="terms" id="terms">
+                Accept Terms and Conditions
+            </label>
+            <br>
+            <input type="submit" value="Submit" step="margin-top: 10px;">
+        </form>
+    </section>
+
+    <section style="float: left; margin: 90px 30px; width: 43%; padding-left: 100px; text-align: center;">
+        <figure>
+            <table style="width: 100%;">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>30</td>
+                <td>Los Angeles</td>
+            </tr>
+            </table>
+        </figure>
+        <br>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <section style="overflow: hidden; float: right; margin: 90px 30px; width: 43%;">
+        <video controls style="width: 60%;">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
 </body>
 </html>
