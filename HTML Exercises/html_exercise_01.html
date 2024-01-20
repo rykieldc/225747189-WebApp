@@ -18,7 +18,10 @@
     <!--Video-->
     <section style="display: flex; align-items: center; justify-content: center;">
         <section style="display: inline-block; margin: 20px; width:40%; padding-right: 20px;">
-            <video width="100%" loop autoplay muted><source src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Laptop.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            <video width="100%" loop autoplay muted>
+                <source src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Laptop.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
         
         <!--Forms-->
@@ -26,11 +29,11 @@
             <form style="margin-left: 60px;">
                 <!--Name-->
                 <label for="username" style="display: block; margin-bottom: 5px;">Name:</label>
-                <input required pattern="[A-Za-z]" type="text" name="username" id="username" style="width: 50%; margin-bottom: 10px; padding: 5px;">
+                <input required type="text" name="username" id="username" style="width: 50%; margin-bottom: 10px; padding: 5px;" pattern="[A-Za-z]" title="Name should only contain letters.">
             
                 <!--Password-->
                 <label for="password" style="display: block; margin-bottom: 5px;">Password:</label>
-                <input required pattern="[A-Za-z0-9]{8,}" title="Minimum length of 8 alphanumeric characters only." minlength="8" type="password" name="password" id="password" style="width: 50%; margin-bottom: 10px; padding: 5px;">
+                <input required type="password" name="password" id="password" style="width: 50%; margin-bottom: 10px; padding: 5px;" minlength="8" title="Password should be at least 8 or more characters">
 
                 <!--Gender-->
                 <label for="gender" style="display: block; margin-bottom: 5px;">Gender:</label>
@@ -109,7 +112,8 @@
             </figure>
 
             <!--Audio-->
-            <audio controls><source src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Raffy.mp3" type="audio/mp3">
+            <audio controls>
+                <source src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Raffy.mp3" type="audio/mp3">
                 Your browser does not support the audio tag.
             </audio>
         </section>
