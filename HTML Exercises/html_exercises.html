@@ -13,85 +13,98 @@
         <b><a href="http://" style="text-decoration: none; color: #000; font-size: 20px; margin: 80px;">Contact</a></b>
     </nav>
 
-    <!--Image-->
-    <section style="float: left; margin: 20px; width: 40%; padding-left: 100px;">
-        <figure>
-            <img src="https://www.liveagent.com/wp/urlslab-download/e564ba2ff281638465b42321576dcd26/img-login.svg" alt="Image">
-        </figure>
+    <!--Video-->
+    <section style="display: flex; align-items: center; justify-content: center;">
+        <section style="display: inline-block; margin: 20px; width:40%; padding-right: 20px;">
+            <video width="100%" autoplay muted><source src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Laptop.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+        </section>
+        
+        <!--Forms-->
+        <section style="display: inline-block; margin: 20px; width: 40%; margin-left: 100px;">
+            <form>
+                <!--Username-->
+                <label for="username" style="display: block; margin-bottom: 5px;">Username:</label>
+                <input type="text" name="username" id="username" style="width: 50%; margin-bottom: 10px; padding: 5px;">
+            
+                <!--Password-->
+                <label for="password" style="display: block; margin-bottom: 5px;">Password:</label>
+                <input type="password" name="password" id="password" style="width: 50%; margin-bottom: 10px; padding: 5px;">
+
+                <!--Gender-->
+                <label for="gender" style="display: block; margin-bottom: 5px;">Gender:</label>
+                <label style="display: block; margin-top: 10px; text-indent: 20px;">
+                    <input type="radio" name="gender" id="Male">Male &emsp;&emsp;
+                    <input type="radio" name="gender" id="Female">Female
+                </label>
+
+                <br>
+                <!--Terms and Conditions-->
+                <label style="display: block; margin-top: 10px;"><input type="checkbox" name="terms" id="terms">Accept Terms and Conditions</label>
+
+                <br>
+                <!--Submit Button-->
+                <input type="submit" value="Submit" style="margin-top: 10px; padding: 10px 50px; background-color: #E5D2C4; color: white; border: none; margin-left: 13%; border-radius: 11px; font-weight: 700;">
+            </form>
+        </section>
     </section>
 
-    <!--Forms-->
-    <section style="float: right; margin: 200px 10px 150px 70px; width: 40%;">
-        <form style="overflow: hidden;">
-            <label for="username">
-                Username:
-                &nbsp;&nbsp;&nbsp;
-            </label>
-            <input type="text" name="username" id="username" style="width: 50%; margin-bottom: 10px;">
-            <br>
-            
-            <label for="password">
-                Password:
-                &emsp;
-            </label>
-            <input type="password" name="password" id="password" style="width: 50%; margin-bottom: 10px;">
-            <br>
-            
-            <label>Gender:</label>
-            <label style="margin-right: 10px;">
-                <input type="radio" name="gender" value="Male">
-                Male
-            </label>
-            <label style="margin-right: 10px;">
-                <input type="radio" name="gender" value="Female">
-                Female
-            </label>
+    <hr style="width: 90%;">
+    <br>
 
-            <label style="display: block; margin-top: 10px;">
-                <input type="checkbox" name="terms" id="terms">
-                Accept Terms and Conditions
-            </label>
-            <br>
-            <input type="submit" value="Submit" step="margin-top: 10px;">
-        </form>
-    </section>
-
-    <section style="float: left; margin: 90px 30px; width: 40%; padding-left: 100px; text-align: center;">
-    
+    <!--Table-->
+    <section style="width: 90%; margin: 0 auto; text-align: center;">
         <figure>
-            <table style="width: 100%;">
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-            </tr>
-            <tr>
-                <td>John</td>
-                <td>25</td>
-                <td>New York</td>
-            </tr>
-            <tr>
-                <td>Jane</td>
-                <td>30</td>
-                <td>Los Angeles</td>
-            </tr>
+            <table style="width: 90%; border-collapse: collapse;">
+                    <tr>
+                        <th style="border: 1px solid #ddd; padding: 8px;">Name</th>
+                        <th style="border: 1px solid #ddd; padding: 8px;">Age</th>
+                        <th style="border: 1px solid #ddd; padding: 8px;">City</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Kween Yasmin</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">19</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Cavite</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Nancy Seguerra</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">45</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Quezon City</td>
+                    </tr>
             </table>
         </figure>
-        <br>
-
-        <!--Audio-->
-        <audio controls>
-            <source src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Esophagus%20by%20Kween%20Yasmin.mp3" type="audio/mp3">
-            Your browser does not support the audio tag.
-        </audio>
     </section>
 
-    <!--Video-->
-    <section style="overflow: hidden; float: right; margin: 90px 30px; width: 43%;">
-        <video controls style="width: 60%;">
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <br>
+    <hr style="width: 90%;">
+    <br>
+
+    <section style="display: flex; align-items: center; justify-content: center; margin: 0 auto; text-align: center;">
+        <section style="display: inline-block; margin: 10px; width: 45%;">
+            <!--Image-->
+            <figure>
+                <img width="100%" src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Kween.jpg" alt="Kween Yasmin">
+            </figure>
+
+            <!--Audio-->
+            <audio controls>
+                <source src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Esophagus%20by%20Kween%20Yasmin.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
         </section>
+
+        <section style="display: inline-block; margin: 10px; width: 45%;">
+            <!--Image-->
+            <figure>
+                <img width="100%" src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Raffy.png" alt="Huwag Ka Nang Magpaliwanag">
+            </figure>
+
+            <!--Audio-->
+            <audio controls><source src="https://raw.githubusercontent.com/rykieldc/225747189-WebApp/main/HTML%20Exercises/Raffy.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+        </section>
+    </section>
+
 </body>
 </html>
