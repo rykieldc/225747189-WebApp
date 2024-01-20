@@ -24,22 +24,24 @@
             <form>
                 <!--Username-->
                 <label for="username" style="display: block; margin-bottom: 5px;">Username:</label>
-                <input type="text" name="username" id="username" style="width: 50%; margin-bottom: 10px; padding: 5px;">
+                <input required type="text" name="username" id="username" style="width: 50%; margin-bottom: 10px; padding: 5px;">
             
                 <!--Password-->
                 <label for="password" style="display: block; margin-bottom: 5px;">Password:</label>
-                <input type="password" name="password" id="password" style="width: 50%; margin-bottom: 10px; padding: 5px;">
+                <input required pattern="[A-Za-z0-9]{8,}" title="Minimum length of 8 alphanumeric characters only." minlength="8" type="password" name="password" id="password" style="width: 50%; margin-bottom: 10px; padding: 5px;">
 
                 <!--Gender-->
                 <label for="gender" style="display: block; margin-bottom: 5px;">Gender:</label>
                 <label style="display: block; margin-top: 10px; text-indent: 20px;">
-                    <input type="radio" name="gender" id="Male">Male &emsp;&emsp;
-                    <input type="radio" name="gender" id="Female">Female
+                    <input required type="radio" name="gender" id="Male">Male &emsp;&emsp;
+                    <input required type="radio" name="gender" id="Female">Female
                 </label>
 
                 <br>
                 <!--Terms and Conditions-->
-                <label style="display: block; margin-top: 10px;"><input type="checkbox" name="terms" id="terms">Accept Terms and Conditions</label>
+                <label style="display: block; margin-top: 10px;">
+                    <input required type="checkbox" name="terms" id="terms">Accept Terms and Conditions
+                </label>
 
                 <br>
                 <!--Submit Button-->
