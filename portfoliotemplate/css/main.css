@@ -1088,26 +1088,30 @@ header {
 	width: 100%;
 	min-height: 66px;
 	z-index: 600;
+	top: 0;
 }
 header .row {
 	position: relative;
 	min-height: 66px;
+	width: 100%;
 }
 header .top-bar {
 	display: block;
-	background: #000000;
+	background: rgba(17, 17, 17, 0.8);
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
 	top: 0;
+	width: 100%;
 }
 header .logo {
-	float: left;
-	margin-left: 20px;
-	margin-right: 50px;
-	margin-top: 25px;
+	/* float: left; */
+	margin: 10px auto 10px;
 	position: relative;
+	width: 200px;
+    height: 88px;
+	display: flex;
+	justify-content: center;
 }
 header .logo a {
 	display: block;
@@ -1117,10 +1121,10 @@ header .logo a {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 92px;
-	height: 15px;
+	width: 100%;
+	height: 100%;
 	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+	background-size: contain;
 }
 
 /**
@@ -1224,12 +1228,11 @@ header .logo a {
 	font-size: 1.5rem;
 	position: absolute;
 	top: 100%;
-	left: 0;
 }
 
 /* dropdown nav */
 .main-navigation {
-	background: #000000;
+	background: rgba(17, 17, 17, 0.8);
 	padding: 24px 30px 42px;
 	margin: 0;
 	width: 100%;
@@ -1294,7 +1297,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #151515 url(../images/intro-bg.png) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1504,15 +1507,17 @@ header .logo a {
 	margin-left: -30px;
 }
 .intro-info img {
-	height: 9rem;
-	width: 9rem;
+	height: auto;
+	width: 15rem;
 	border-radius: 50%;
-	margin: .9rem 0 0 0;
+	margin: .9rem 1rem .9rem 0;
 	float: left;
 }
 .intro-info .lead {
 	text-align: left;
 	padding-left: 13rem;
+	margin-left: 5rem;
+	font-size: medium;
 }
 
 .about-content {
