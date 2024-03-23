@@ -1085,7 +1085,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 header {
 	position: fixed;
-	width: 100%;
+	width: 100%; 
 	min-height: 66px;
 	z-index: 600;
 	top: 0;
@@ -1106,10 +1106,10 @@ header .top-bar {
 }
 header .logo {
 	/* float: left; */
-	margin: 10px auto 10px;
+	margin: 10px 0 10px;
 	position: relative;
-	width: 200px;
-    height: 88px;
+	width: 100px;
+    height: 55px;
 	display: flex;
 	justify-content: center;
 }
@@ -1517,7 +1517,7 @@ header .logo a {
 	text-align: left;
 	padding-left: 13rem;
 	margin-left: 5rem;
-	font-size: medium;
+	font-size: large;
 }
 
 .about-content {
@@ -1608,9 +1608,9 @@ header .logo a {
 		margin-top: 3rem;
 	}
 	.intro-info img {
-		height: 6.6rem;
-		width: 6.6rem;
+		max-width: 100%;
 		float: none;
+		margin: auto .9rem auto;
 		display: inline-block;
 	}
 	.intro-info .lead {
